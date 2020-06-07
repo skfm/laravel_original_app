@@ -109,7 +109,7 @@
 							クリップボードをクリックしてコピーしてください。
 						</p>
 						<p id="copyTarget" class="card-text">
-							https://original-app-php.herokuapp.com/question.php?id={{ $user->id }}
+							{{url('/question')}}?id={{ $user->id }}
 						</p>
 						<button class="submit btn btn-warning" onclick="copyToClipboard()">URLをコピー</button>
 					</div>

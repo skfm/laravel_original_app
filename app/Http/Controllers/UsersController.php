@@ -108,6 +108,21 @@ class UsersController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function result($id)
+    {
+        $user = User::find($id);
+
+        return view('result', [
+            'user' => $user,
+        ]);
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
