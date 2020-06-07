@@ -62,7 +62,7 @@
                 </form>
             </li>
             <li class="nav-item active-pro">
-                <a class="nav-link" href="{{ route('user.delete', ['user' => $user->id]) }}">
+                <a class="nav-link" href="">
                     <i class="material-icons">delete</i>
                     <p>退会</p>
                 </a>
@@ -79,6 +79,7 @@
 	</div>
 
   <main class="content">
+    <div class="container">
 		@if($errors->any())
 			<div class="alert alert-danger">
 			@foreach($errors->all() as $message)
@@ -87,35 +88,44 @@
 			</div>
 		@endif
 
-		<div class="row">
-			<div class="col-md-6">
-			<div class="card">
-					<div class="card-body">
-					<h4 class="card-title">アプリの使い方</h4>
-					<p class="card-text">
-						アプリの使い方の説明を入力する。
-					</p>
-					</div>
-			</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card">
-					<div class="card-body">
-						<h4 class="card-title">{{ $user->name }}さん専用 質問URL</h4>
-						<p class="card-text">
-							下記の表示されているURLをコピーするか、<br>
-							クリップボードをクリックしてコピーしてください。
-						</p>
-						<p id="copyTarget" class="card-text">
-							https://original-app-php.herokuapp.com/question.php?id={{ $user->id }}
-						</p>
-						<button class="submit btn btn-warning" onclick="copyToClipboard()">URLをコピー</button>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">編集方法</h4>
+                  <p class="card-text">
+                    下記のフォームに相性診断の結果に表示させたい<br>
+                    「名前」、「表示メッセージ」、「画像」を<br>
+                    入力してください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form class="edit" action="{{ route('user.update', ['user' => $user->id]) }}"
+                method="POST" enctype="multipart/form-data">
+                @csrf
+              <div class="form-group">
+                <h4>登録内容</h4>
+              </div>
+              <div class="form-group">
+                <label for="name" class="bmd-label-floating">名前</label>
+                <input type="text" name="name" value="{{ old('title', $user->name) }}" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="text">メッセージ</label>
+                <textarea class="form-control" name="content" rows="5">{{ $user->content }}</textarea>
+              </div>
+              <div class="form-group">
+              <input type="submit" name="btn_submit" value="編集する" class="btn btn-warning">
+              <a class="btn_cancel btn btn-default" href="{{ route('user.show', ['user' => $user->id]) }}">戻る</a>
+              </div>
+              <input type="hidden" name="_method" value="patch">
+              </form>
+            </div>
+          </div>
   </main>
   <footer class="footer">
     <div class="container-fluid">
