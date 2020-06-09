@@ -115,8 +115,18 @@
                 <input type="text" name="name" value="{{ old('title', $user->name) }}" class="form-control">
               </div>
               <div class="form-group">
-                <label for="text">メッセージ</label>
+                <label for="content">メッセージ</label>
                 <textarea class="form-control" name="content" rows="5">{{ $user->content }}</textarea>
+              </div>
+              @if ($user->image_path)
+              <div class="form-group">
+                <label for="image_path" class="bmd-label-floating">登録されている画像</label>
+                <img src="{{ asset('storage/result_img/' . $user->image_path) }}" alt="ユーザーが登録した画像">
+              </div>
+              @endif
+              <div class="form-group">
+                <label for="image_path" class="bmd-label-floating">画像アップロード</label>
+                <input type="file" name="image_path" value="" class="form-control">
               </div>
               <div class="form-group">
               <input type="submit" name="btn_submit" value="編集する" class="btn btn-warning">

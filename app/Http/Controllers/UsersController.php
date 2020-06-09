@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\EditUser;
 use App\User;
 
 class UsersController extends Controller
@@ -75,17 +76,22 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(EditUser $request, $id)
     {
         //レコードを検索
         $user = \App\User::findOrFail($id);
 
         //値を代入
-        $user->name = $request->name;
-        $user->content = $request->content;
+        if ($request->file('image_path')->isValid())
+        {
+            $path = $request->file('image_path')->store('public/result_img');
+            $user->image_path = basename($path);
+            $user->name = $request->name;
+            $user->content = $request->content;
 
-        //保存（更新）
-        $user->save();
+            //保存（更新）
+            $user->save();
+        }
 
         return view('user/show', [
             'user' => $user,

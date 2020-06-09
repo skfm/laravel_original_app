@@ -23,6 +23,12 @@ img {
 }
 
 /* フォーム画面*/
+.form-group input[type=file] {
+    opacity: 1;
+    position: inherit;
+    z-index: 1;
+}
+
 .form-group.btn-group,
 .form-group.check {
     text-align: center;

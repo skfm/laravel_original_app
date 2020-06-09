@@ -14,7 +14,7 @@ class EditUser extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,9 @@ class EditUser extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|max:255',
+            'content' => 'required',
+            'image_path' => 'required|file|image|mimes:jpeg,png'
         ];
     }
 }

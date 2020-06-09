@@ -17,9 +17,9 @@ class UsersTableSeeder extends Seeder
             'name' => 'test',
             'email' => 'dummy@email.com',
             'password' => bcrypt('test1234'),
+            'content' => '相性の良い相手はtestです!',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'content' => '相性の良い相手はtestです!'
         ]);
     }
 }
