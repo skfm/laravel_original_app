@@ -19,12 +19,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('user', 'UsersController');
 Route::get('/user/delete/{user}', 'UsersController@delete')->name('user.delete');
-Route::post('/result/{user}', 'UsersController@result')->name('user.result');
+
+Route::get('/result/{user}', 'UsersController@result')->name('result');
+Route::post('/result/{user}', 'UsersController@result')->name('result');
 
 Route::get('/question', function () {
     return view('question');
-});
+})->name('question');
