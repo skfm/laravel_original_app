@@ -1,5 +1,5 @@
-// indexページのクリップボードのコピー
 function copyToClipboard() {
+    // indexページのクリップボードのコピー
     const text = document.getElementById("copyTarget").innerText;
     const area = document.createElement("textarea");
     area.textContent = text;
@@ -11,6 +11,12 @@ function copyToClipboard() {
   }
 
   $(function () {
+    // ユーザーページのナビゲーション開閉
+    $('.navbar-toggler').on('click',function(){
+        $(this).toggleClass('toggled');
+        $('.sidebar').toggleClass('opened');
+      });
+
     // questionページのボタンアクション
     $(".form_item:not(:first-child)").hide();
 

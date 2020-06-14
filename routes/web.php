@@ -20,8 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('user', 'UsersController');
-Route::get('/user/delete/{user}', 'UsersController@delete')->name('user.delete');
+Route::resource('user', 'UsersController')->middleware('auth');
+Route::get('/user/delete/{user}', 'UsersController@delete')->name('user.delete')->middleware('auth');
 
 Route::get('/result/{user}', 'UsersController@result')->name('result');
 Route::post('/result/{user}', 'UsersController@result')->name('result');

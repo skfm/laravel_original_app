@@ -10,13 +10,13 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">アプリ名</h4>
+                <h4 class="card-title">JPT</h4>
                 <div class="main-visula">
                   <img src="{{ asset('/images/fun-at-carnival.jpg') }}" alt="笑っている女性">
                 </div>
                 <div class="card-desc">
-                  「アプリ名」は相性占い風ジョークアプリです。<br>
-                  使用したい相手に URL を送り質問に答えてもらうと  予め登録しているメッセージと画像が相性占い結果に表示されます。<br><br>
+                  「JPT」は相性診断テスト風ジョークアプリです。<br>
+                  使用したい相手に URL を送り質問に答えてもらうと  予め登録しているメッセージと画像が診断結果に表示されます。<br><br>
                   「初対面の異性との話のネタに困っている」、「面白いことを言えずに会話が盛り上がらない」と悩んでいる人向けです。<br><br>
 
                   初めての方は新規登録から登録を行い利用してください。

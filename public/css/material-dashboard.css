@@ -7571,7 +7571,7 @@
   }
 
   .fixed-top {
-    position: fixed;
+    position: fixed!important;
     top: 0;
     right: 0;
     left: 0;
@@ -19160,8 +19160,8 @@
       top: 0;
       height: 100vh;
       width: 260px;
-      right: 0;
-      left: auto;
+      right: auto;
+      left: 0;
       z-index: 1032;
       visibility: visible;
       background-color: #9A9A9A;
@@ -19196,7 +19196,7 @@
       height: 100%;
       width: 100%;
       position: absolute;
-      background-color: #282828;
+      background-color: #fff;
       display: block;
       content: "";
       z-index: 1;
@@ -19755,3 +19755,5 @@
   }
 
   /*# sourceMappingURL=dashboard-free.css.map */
+
+

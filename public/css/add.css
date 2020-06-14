@@ -27,6 +27,10 @@ img {
   width: 100%;
 }
 
+.navbar .navbar-wrapper {
+  display: none;
+}
+
 /* フォーム画面*/
 .form-group input[type=file] {
   opacity: 1;
@@ -40,25 +44,30 @@ img {
 }
 
 .form-check .form-check-input {
-  height: 20px;
+  height: 18px;
   overflow: visible;
   opacity: 1;
   width: 12px;
   z-index: 1;
-  left: 38%;
+  left: 20%;
 }
 
 .form-check .form-check-label {
   cursor: pointer;
-  padding-left: 60px;
   position: relative;
 }
 
-.password-text {
-  padding: 0 15px;
+@media screen and (max-width: 425px) {
+  .form-check .form-check-label {
+    padding-left: 50px;
+  }
 }
 
 /* フォーム画面*/
+.form-control {
+  padding-left: 5px;
+}
+
 /* edit */
 /* delete */
 form.edit,
@@ -97,38 +106,52 @@ form.delete .form-group:nth-child(1) {
   font-size: 0.6875rem;
 }
 
-.index {
+.index,
+.login-content,
+.signup-content {
   background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   background-repeat: no-repeat;
   background-size: cover;
   color: #333;
 }
 
-.index .row {
+.index .row,
+.login-content .row,
+.signup-content .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.index .card .card-title {
+.index .card .card-title,
+.login-content .card .card-title,
+.signup-content .card .card-title {
   text-align: center;
 }
 
-.index .btn-wrapper {
+.index .btn-wrapper,
+.login-content .btn-wrapper,
+.signup-content .btn-wrapper {
   text-align: center;
 }
 
-.index .main-visula {
+.index .main-visula,
+.login-content .main-visula,
+.signup-content .main-visula {
   position: relative;
   margin-top: 10px;
 }
 
-.index .main-visula img {
+.index .main-visula img,
+.login-content .main-visula img,
+.signup-content .main-visula img {
   -webkit-filter: grayscale(100%) contrast(0.9);
           filter: grayscale(100%) contrast(0.9);
 }
 
-.index .main-visula::after {
+.index .main-visula::after,
+.login-content .main-visula::after,
+.signup-content .main-visula::after {
   content: "";
   display: block;
   position: absolute;
@@ -140,25 +163,72 @@ form.delete .form-group:nth-child(1) {
   background-image: linear-gradient(80deg, orange, #810000);
 }
 
-.index .card-desc {
+.index .card-desc,
+.login-content .card-desc,
+.signup-content .card-desc {
   margin-top: 10px;
 }
 
-.index .btn-wrapper {
+.index .btn-wrapper,
+.login-content .btn-wrapper,
+.signup-content .btn-wrapper {
   margin-top: 10px;
 }
 
-.index .signup.btn {
+.index .signup.btn,
+.login-content .signup.btn,
+.signup-content .signup.btn {
   margin-right: 10px;
 }
 
-.index .login.btn {
+.index .login.btn,
+.login-content .login.btn,
+.signup-content .login.btn {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .index .card .card-body:nth-of-type(2),
+  .login-content .card .card-body:nth-of-type(2),
+  .signup-content .card .card-body:nth-of-type(2) {
+    padding: 0.9375rem 0;
+  }
+  .index .col-md-6,
+  .login-content .col-md-6,
+  .signup-content .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  .index {
+  .index,
+  .login-content,
+  .signup-content {
     min-height: 800px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar {
+    -webkit-transform: translate3d(-260px, 0, 0);
+            transform: translate3d(-260px, 0, 0);
+  }
+  .sidebar.opened {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+  }
+  .main-panel + .row {
+    margin-top: 60px;
+  }
+  .navbar.navbar-absolute {
+    padding: 0;
+    background-color: #fff !important;
+  }
+  .navbar .navbar-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 /*# sourceMappingURL=add.css.map */

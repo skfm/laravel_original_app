@@ -10,9 +10,11 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">アプリの使い方</h4>
+                    <h4 class="card-title">JPTの使い方</h4>
                     <p class="card-text">
-                        アプリの使い方の説明を入力する。
+                        1.「結果の登録確認または編集」から情報を登録<br>
+                        2.「結果の確認」から結果を確認<br>
+                        3.問題なければ専用URLを気になる異性に送って相性テストにチャレンジしてもらおう！
                     </p>
                 </div>
             </div>

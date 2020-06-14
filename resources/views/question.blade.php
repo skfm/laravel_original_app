@@ -16,7 +16,7 @@
         </p>
       </div>
       <?php $id = $_GET['id']; ?>
-      <form class="form_wrapper" action="{{ route('user.result', ['user' => $id]) }}" method="post">
+      <form class="form_wrapper" action="{{ route('result', ['user' => $id]) }}" method="post">
         <div id="form_1" class="form_item">
           <h2 class="form_title">QUESTION 1</h2>
           <p class="form_question">
