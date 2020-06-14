@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\EditUser;
+use Illuminate\Support\Facades\Auth;
 use App\User;
 
 class UsersController extends Controller
@@ -49,6 +50,12 @@ class UsersController extends Controller
     {
         $user = User::find($id);
 
+        if (is_null($user)) {
+            abort(404);
+        } elseif (Auth::id() !== User::find($id)->id) {
+            abort(403);
+        }
+
         return view('user/show', [
             'user' => $user,
         ]);
@@ -63,6 +70,12 @@ class UsersController extends Controller
     public function edit($id)
     {
         $user = User::find($id);
+
+        if (is_null($user)) {
+            abort(404);
+        } elseif (Auth::id() !== User::find($id)->id) {
+            abort(403);
+        }
 
         return view('user/edit', [
             'user' => $user,
@@ -107,6 +120,12 @@ class UsersController extends Controller
     public function delete($id)
     {
         $user = User::find($id);
+
+        if (is_null($user)) {
+            abort(404);
+        } elseif (Auth::id() !== User::find($id)->id) {
+            abort(403);
+        }
 
         return view('user/delete', [
             'user' => $user,
