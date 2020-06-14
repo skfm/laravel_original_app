@@ -9,7 +9,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">JPT パスワードリセット</h4>
+                        <h4 class="card-title">JPT パスワード再設定</h4>
                         <div class="main-visula">
                             <img src="{{ asset('/images/fun-at-carnival.jpg') }}" alt="笑っている女性">
                         </div>
@@ -21,7 +21,7 @@
                                 <input type="hidden" name="token" value="{{ $token }}">
 
                                 <div class="form-group row">
-                                    <label for="email" class="col-md-6 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
+                                    <label for="email" class="col-md-6 col-form-label text-md-left">{{ __('メールアドレス') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
@@ -35,7 +35,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="password" class="col-md-6 col-form-label text-md-right">{{ __('パスワード') }}</label>
+                                    <label for="password" class="col-md-6 col-form-label text-md-left">{{ __('パスワード') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -49,17 +49,17 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('パスワード確認') }}</label>
+                                    <label for="password-confirm" class="col-md-6 col-form-label text-md-left">{{ __('パスワード確認') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                     </div>
                                 </div>
 
-                                <div class="form-group row mb-0">
+                                <div class="form-group row mb-0 col-md-8">
                                     <div class="col-md-6 offset-md-4">
                                         <button type="submit" class="submit btn btn-warning">
-                                            {{ __('Reset パスワード') }}
+                                            {{ __('パスワードを再設定する') }}
                                         </button>
                                     </div>
                                 </div>
