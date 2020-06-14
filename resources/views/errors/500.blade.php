@@ -1,5 +1,6 @@
 @extends('layouts/template')
 
+@section('title','500ページ')
 @include('layouts/head')
 
 @section('content')

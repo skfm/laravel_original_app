@@ -1,5 +1,6 @@
 @extends('layouts/template')
 
+@section('title','理想のお相手診断テスト｜結果')
 @include('layouts/head')
 
 @section('content')

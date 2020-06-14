@@ -1,5 +1,6 @@
 @extends('layouts/template')
 
+@section('title','404ページ')
 @include('layouts/head')
 
 @section('content')

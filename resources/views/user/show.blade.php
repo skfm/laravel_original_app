@@ -1,5 +1,6 @@
 @extends('layouts/template')
 
+@section('title','JPT|詳細')
 @include('layouts/head')
 
 @section('content')

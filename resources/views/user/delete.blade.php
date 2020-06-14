@@ -1,5 +1,6 @@
 @extends('layouts/template')
 
+@section('title','JPT|退会確認')
 @include('layouts/head')
 
 @section('content')

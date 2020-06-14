@@ -1,5 +1,6 @@
 @extends('layouts/template')
 
+@section('title','JPT｜パスワード再設定')
 @include('layouts/head')
 
 @section('content')

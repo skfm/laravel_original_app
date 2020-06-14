@@ -1,5 +1,6 @@
 @extends('layouts/template')
 
+@section('title','JPT｜ログイン')
 @include('layouts/head')
 
 @section('content')
