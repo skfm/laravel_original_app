@@ -3,7 +3,7 @@
 /* 共通 */
 /* レアアウト */
 .main-panel > .content {
-  padding: 0px 15px;
+    padding: 0px 15px;
 }
 
 .row {
@@ -17,13 +17,13 @@
 }
 
 .card {
-  margin-bottom: 15px;
-  margin-top: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 img {
-  max-width: 100%;
-  width: 100%;
+    max-width: 100%;
+    width: 100%;
 }
 
 .navbar .navbar-wrapper {
@@ -73,21 +73,21 @@ img {
 /* delete */
 form.edit,
 form.delete {
-  padding: 10px 15px;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    background-color: #fff;
 }
 
 form.edit .form-group,
 form.delete .form-group {
-  margin: 25px 0 0;
+    margin: 25px 0 0;
 }
 
 form.edit .form-group:nth-child(1),
 form.edit .form-group:nth-child(2),
 form.delete .form-group:nth-child(1) {
-  margin: 10px 0 0;
+    margin: 10px 0 0;
 }
 
 /* 管理画面の調整 */
@@ -95,93 +95,93 @@ form.delete .form-group:nth-child(1) {
 /* login */
 .signup .col-md-6,
 .login .col-md-6 {
-  margin: auto;
+    margin: auto;
 }
 
 /* delete */
 .is-focused .bmd-label-floating,
 .is-filled .bmd-label-floating {
-  top: -25px;
-  left: 0;
-  font-size: 0.6875rem;
+    top: -25px;
+    left: 0;
+    font-size: 0.6875rem;
 }
 
 // index
 .index,
 .login-content,
 .signup-content {
-  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #333;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
 
-  .row {
-    justify-content: center;
-  }
+    .row {
+        justify-content: center;
+    }
 
-  .card .card-title {
-    text-align: center;
-  }
+    .card .card-title {
+        text-align: center;
+    }
 
-  .btn-wrapper {
-    text-align: center;
-  }
+    .btn-wrapper {
+        text-align: center;
+    }
 
-  .main-visula {
-    position: relative;
-    margin-top: 10px;
+    .main-visula {
+        position: relative;
+        margin-top: 10px;
 
     img {
-      filter: grayscale(100%) contrast(0.9);
+        filter: grayscale(100%) contrast(0.9);
     }
 
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      opacity: 0.55;
-      background-image: linear-gradient(80deg, orange, #810000);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.55;
+        background-image: linear-gradient(80deg, orange, #810000);
     }
-  }
+}
 
-  .card-desc {
-    margin-top: 10px;
-  }
-
-  .btn-wrapper {
-    margin-top: 10px;
-  }
-
-  .signup.btn {
-    margin-right: 10px;
-  }
-
-  .login.btn {
-    margin-left: 10px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .card .card-body:nth-of-type(2) {
-        padding: 0.9375rem 0;
+    .card-desc {
+        margin-top: 10px;
     }
 
-    .col-md-6 {
-        padding-left: 0;
-        padding-right: 0;
+    .btn-wrapper {
+        margin-top: 10px;
     }
-  }
+
+    .signup.btn {
+        margin-right: 10px;
+    }
+
+    .login.btn {
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .card .card-body:nth-of-type(2) {
+            padding: 0.9375rem 0;
+        }
+
+        .col-md-6 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
-  .index,
-  .login-content,
-  .signup-content {
-    min-height: 800px;
-  }
+    .index,
+    .login-content,
+    .signup-content {
+        min-height: 800px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -207,5 +207,5 @@ form.delete .form-group:nth-child(1) {
             display: inline-flex;
         }
     }
-  }
+}
 

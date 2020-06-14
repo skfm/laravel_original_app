@@ -91,10 +91,8 @@ class UsersController extends Controller
      */
     public function update(EditUser $request, $id)
     {
-        //レコードを検索
         $user = \App\User::findOrFail($id);
 
-        //値を代入
         if ($request->file('image_path')->isValid())
         {
             $path = $request->file('image_path')->store('public/result_img');
@@ -102,7 +100,6 @@ class UsersController extends Controller
             $user->name = $request->name;
             $user->content = $request->content;
 
-            //保存（更新）
             $user->save();
         }
 
