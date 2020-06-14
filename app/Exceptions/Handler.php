@@ -27,7 +27,7 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * Report or log an exception.
+     * 例外をレポート、もしくはログ
      *
      * @param  \Throwable  $exception
      * @return void
@@ -40,7 +40,7 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Render an exception into an HTTP response.
+     * HTTPレスポンスに対応する例外をレンダー
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Throwable  $exception

@@ -28,7 +28,7 @@ return [
     | sending an e-mail. You will specify which one you are using for your
     | mailers below. You are free to add additional mailers as required.
     |
-    | Supported: "smtp", "sendmail", "mailgun", "ses",
+    | サポートドライバー: "smtp", "sendmail", "mailgun", "ses",
     |            "postmark", "log", "array"
     |
     */
@@ -74,12 +74,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Global "From" Address
+    | グローバルな「送信元」アドレス
     |--------------------------------------------------------------------------
     |
-    | You may wish for all e-mails sent by your application to be sent from
-    | the same address. Here, you may specify a name and address that is
-    | used globally for all e-mails that are sent by your application.
+    | メールの送信元は全部同じメールアドレスに設定したいと思うはずです。
+    | アプリケーションから送信される全メールの送信元名とアドレスはここで
+    | 設定します。
     |
     */
 
@@ -90,12 +90,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Markdown Mail Settings
+    | Markdownメール設定
     |--------------------------------------------------------------------------
     |
-    | If you are using Markdown based email rendering, you may configure your
-    | theme and component paths here, allowing you to customize the design
-    | of the emails. Or, you may simply stick with the Laravel defaults!
+    | Markdownベースのメールレンダリングを使用するなら、テーマと
+    | コンポーネントパスをここに設定します。これにより、メールのデザインをカスタマイズ
+    | できます。もしくは、シンプルにLaravelのデフォルトを使用しましょう！
     |
     */
 

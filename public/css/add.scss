@@ -10,6 +10,10 @@
     justify-content: center;
     width: 100%;
     margin: auto;
+
+    .alert-danger.col-md-6 {
+        margin-top: 25px;
+    }
 }
 
 .card {
@@ -77,12 +81,6 @@ form.delete .form-group:nth-child(1) {
   margin: 10px 0 0;
 }
 
-/* アラート */
-.alert.col-md-12 {
-  margin-top: 20px;
-  padding: 0;
-}
-
 /* 管理画面の調整 */
 /* signup */
 /* login */
@@ -97,64 +95,6 @@ form.delete .form-group:nth-child(1) {
   top: -25px;
   left: 0;
   font-size: 0.6875rem;
-}
-
-/* admin */
-.admin .container {
-  background: #eee;
-  overflow: hidden;
-  width: 100%;
-}
-
-@media screen and (max-width: 500px) {
-  .admin .table thead tr th {
-    font-size: 12px;
-  }
-
-  .admin .table > thead > tr > th,
-  .admin .table > tbody > tr > th,
-  .admin .table > tfoot > tr > th,
-  .admin .table > thead > tr > td,
-  .admin .table > tbody > tr > td,
-  .admin .table > tfoot > tr > td {
-    padding: 5px;
-    vertical-align: middle;
-    border-color: #ddd;
-    text-align: center !important;
-    overflow: hidden;
-    width: 10%;
-    max-width: 150px;
-  }
-
-  .admin .table > thead > tr > td > span,
-  .admin .table > tbody > tr > td > span,
-  .admin .table > tfoot > tr > td > span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: block;
-  }
-
-  .admin .table > tbody > tr > td:nth-child(1) {
-    max-width: 40px;
-  }
-
-  .admin .table > tbody > tr > td:nth-child(2) {
-    max-width: 80px;
-  }
-
-  .admin .card .card-body {
-    padding: 0.9375rem 10px;
-  }
-
-  .admin .col-md-12 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .admin .delete.btn {
-    padding: 5px;
-  }
 }
 
 // index
