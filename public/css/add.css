@@ -113,6 +113,7 @@ form.delete .form-group:nth-child(1) {
   background-repeat: no-repeat;
   background-size: cover;
   color: #333;
+  height: 100vh;
 }
 
 .index .row,
