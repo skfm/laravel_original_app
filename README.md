@@ -15,6 +15,17 @@
 - ジョークだと分かっても相性が良いと結果亜が無意識に意識してしまうので恋愛の成功確率をあげる
 - 表示させるメッセージに自分の長所を書くことで第3者視点に見せかけて長所をアピールできる
 
+### 使用技術
+- HTML
+- css
+- scss
+- bootstrap
+- javascript
+- jQuery
+- php
+- Laravel
+- Docker
+
 ### 開発環境
 - windows10
 - Docker for Windows
@@ -25,15 +36,15 @@
 - PHP Version 7.3
 - phpMyAdmin
 
-### データベースの設計
-#### usersテーブル
-- id int 主キー
-- name varchar(255)
-- email varchar(255),unique
-- email_verified_at timestamp,nullable
-- password varchar(255)
-- content text
-- image_path varchar(255)
-- remember_token varchar(100)
-- created_at timestamp
-- updated_at timestamp
+### 本番環境
+- http://jpt-app.herokuapp.com/
+- Apache
+- MYSQL 5.7
+- Laravel 7.15.0
+- PHP Version 7.3
+- phpMyAdmin
+
+### 本番環境　テストユーザー
+メールアドレス：test01@email.com
+パスワード：12345678
+質問ページ：http://jpt-app.herokuapp.com/question?id=1
