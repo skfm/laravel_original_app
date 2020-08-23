@@ -97,7 +97,8 @@ class UsersController extends Controller
         {
             $disk = Storage::disk('s3');
             $fileName = $disk->put('', $request->file('image_path'));
-            // $user->image_path = $fileName;
+            $path = $request->file('image_path')->store('public/result_img');
+            $user->image_path = basename($path);
             $user->name = $request->name;
             $user->content = $request->content;
 
