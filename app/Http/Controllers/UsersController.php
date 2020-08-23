@@ -95,8 +95,9 @@ class UsersController extends Controller
 
         if ($request->file('image_path')->isValid())
         {
-            $path = $request->file('image_path')->store('public/result_img');
-            $user->image_path = basename($path);
+            $disk = Storage::disk('s3');
+            $fileName = $disk->put('', $request->file('image_path'));
+            $user->image_path = $disk->url($fileName);
             $user->name = $request->name;
             $user->content = $request->content;
 
