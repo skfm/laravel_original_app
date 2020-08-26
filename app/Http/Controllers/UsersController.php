@@ -104,8 +104,6 @@ class UsersController extends Controller
             $user->save();
         }
 
-        }
-
         return view('user/show', [
             'user' => $user,
         ]);
