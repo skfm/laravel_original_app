@@ -50,7 +50,7 @@
             @if ($user->image_path)
                 <div class="form-group">
                     <label for="image_path" class="bmd-label-floating">登録されている画像</label>
-                    <img src="{{ asset('storage/result_img/' . $user->image_path) }}" alt="ユーザーが登録した画像">
+                    <img src="{{ Storage::disk('s3')->url($user->image_path) }}" alt="ユーザーが登録した画像">
                 </div>
             @endif
             <div class="form-group">

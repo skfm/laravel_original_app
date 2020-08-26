@@ -15,7 +15,7 @@
             </p>
         </div>
         <div class="result_item">
-            <img src="{{ asset('storage/result_img/' . $user->image_path) }}" alt="ユーザーが登録した画像">
+            <img src="{{ Storage::disk('s3')->url($user->image_path) }}" alt="ユーザーが登録した画像">
         </div>
         <div class="result_item">
             {{ $user->content }}
