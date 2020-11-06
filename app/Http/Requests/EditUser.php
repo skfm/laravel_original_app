@@ -27,7 +27,7 @@ class EditUser extends FormRequest
         return [
             'name' => 'required|max:255',
             'content' => 'required',
-            'image_path' => 'required|file|image|mimes:jpeg,png'
+            'image_path' => 'file|image|mimes:jpeg,png'
         ];
     }
 }

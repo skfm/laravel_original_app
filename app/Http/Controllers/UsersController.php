@@ -84,6 +84,27 @@ class UsersController extends Controller
     }
 
     /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function photoEdit($id)
+    {
+        $user = User::find($id);
+
+        if (is_null($user)) {
+            abort(404);
+        } elseif (Auth::id() !== User::find($id)->id) {
+            abort(403);
+        }
+
+        return view('user/photo-edit', [
+            'user' => $user,
+        ]);
+    }
+
+    /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -94,15 +115,17 @@ class UsersController extends Controller
     {
         $user = \App\User::findOrFail($id);
 
-        if ($request->file('image_path')->isValid())
+        if ($request->file('image_path'))
         {
             $disk = Storage::disk('s3');
             $fileName = $disk->put('', $request->file('image_path'));
             $user->image_path = $fileName;
+        } else {
             $user->name = $request->name;
             $user->content = $request->content;
-            $user->save();
         }
+
+        $user->save();
 
         return view('user/show', [
             'user' => $user,

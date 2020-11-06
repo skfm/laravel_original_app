@@ -16,7 +16,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('user.edit', ['user' => $user->id]) }}">
                 <i class="material-icons">edit</i>
-                    <p>結果の登録または編集</p>
+                    <p>結果の登録(テキスト)</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('user.photo.edit', ['user' => $user->id]) }}">
+                <i class="material-icons">edit</i>
+                    <p>結果の登録(画像)</p>
                 </a>
             </li>
             <li class="nav-item ">
