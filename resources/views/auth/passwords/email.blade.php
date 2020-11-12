@@ -10,7 +10,10 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">JPT パスワードリセット</h4>
+                        <h4 class="card-title">
+                            <a class="" href="{{ url('') }}">JPT</a>
+                            パスワードリセット
+                        </h4>
                         <div class="main-visula">
                             <img src="{{ asset('/images/fun-at-carnival.jpg') }}" alt="笑っている女性">
                         </div>
@@ -39,7 +42,7 @@
                                 </div>
 
                                 <div class="form-group row mb-0 btn-group">
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <button type="submit" class="submit btn btn-warning">
                                             パスワードをリセットする
                                         </button>

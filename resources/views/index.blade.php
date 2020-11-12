@@ -10,7 +10,9 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">JPT</h4>
+                            <h4 class="card-title">
+                                <a class="" href="{{ url('') }}">JPT</a>
+                            </h4>
                                 <div class="main-visula">
                                     <img src="{{ asset('/images/fun-at-carnival.jpg') }}" alt="笑っている女性">
                                 </div>

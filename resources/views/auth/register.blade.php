@@ -10,7 +10,10 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">JTP 新規登録</h4>
+                        <h4 class="card-title">
+                            <a class="" href="{{ url('') }}">JPT</a>
+                            新規登録
+                        </h4>
                         <div class="main-visula">
                             <img src="{{ asset('/images/fun-at-carnival.jpg') }}" alt="笑っている女性">
                         </div>
@@ -19,9 +22,9 @@
                                 @csrf
 
                                 <div class="form-group row">
-                                    <label for="name" class="col-md-6 col-form-label text-md-left">{{ __('名前') }}</label>
+                                    <label for="name" class="col-md-12 col-form-label text-md-left">{{ __('名前') }}</label>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                         @error('name')
@@ -33,9 +36,9 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="email" class="col-md-6 col-form-label text-md-left">{{ __('メールアドレス') }}</label>
+                                    <label for="email" class="col-md-12 col-form-label text-md-left">{{ __('メールアドレス') }}</label>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                         @error('email')
@@ -47,9 +50,9 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="password" class="col-md-6 col-form-label text-md-left">{{ __('パスワード') }}</label>
+                                    <label for="password" class="col-md-12 col-form-label text-md-left">{{ __('パスワード') }}</label>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                         @error('password')
@@ -61,9 +64,9 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="password-confirm" class="col-md-6 col-form-label text-md-left">{{ __('パスワード確認') }}</label>
+                                    <label for="password-confirm" class="col-md-12 col-form-label text-md-left">{{ __('パスワード確認') }}</label>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                     </div>
                                 </div>

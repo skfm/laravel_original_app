@@ -21,6 +21,15 @@
     margin-top: 15px;
 }
 
+a {
+    transition: .3s;
+}
+
+a:hover, a:focus {
+    color: rgb(255, 204, 229);
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     width: 100%;
@@ -49,7 +58,17 @@ img {
         opacity: 1;
         width: 12px;
         z-index: 1;
-        left: 20%;
+        left: 25%;
+
+        @media screen and (min-width: 768px) {
+            left: 18%;
+            transform: translate(-50%, 0);
+        }
+
+        @media screen and (min-width: 1024px) {
+            left: 30%;
+            transform: translate(-50%, 0);
+        }
     }
 
     .form-check-label {
@@ -65,8 +84,17 @@ img {
 }
 
 /* フォーム画面*/
-.form-control {
-    padding-left: 5px;
+#__lpform_name,
+#__lpform_password,
+#__lpform_password-confirm,
+#__lpform_email_icon {
+    width: 16px;
+}
+
+.btn-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* edit */

@@ -10,7 +10,10 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">JPT ログイン</h4>
+                        <h4 class="card-title">
+                            <a class="" href="{{ url('') }}">JPT</a>
+                            ログイン
+                        </h4>
                         <div class="main-visula">
                             <img src="{{ asset('/images/fun-at-carnival.jpg') }}" alt="笑っている女性">
                         </div>
@@ -19,9 +22,9 @@
                                 @csrf
 
                                 <div class="form-group row">
-                                    <label for="email" class="col-md-6 col-form-label text-md-left">{{ __('メールアドレス') }}</label>
+                                    <label for="email" class="col-md-12 col-form-label text-md-left">{{ __('メールアドレス') }}</label>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                         @error('email')
@@ -33,9 +36,9 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="password" class="col-md-6 col-form-label text-md-left">{{ __('パスワード') }}</label>
+                                    <label for="password" class="col-md-12 col-form-label text-md-left">{{ __('パスワード') }}</label>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                         @error('password')
@@ -47,7 +50,7 @@
                                 </div>
 
                                 <div class="form-group row check">
-                                    <div class="col-md-6">
+                                    <div class="col-md-10">
                                         <div class="form-check">
                                             <label class="form-check-label" for="remember">
                                                 {{ __('ログインを継続する') }}
