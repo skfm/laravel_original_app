@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{ route('result', ['user' => $user->id]) }}">
+                <a class="nav-link" href="{{ route('result', ['user' => $user->id]) }}" target="_blank">
                     <i class="material-icons">phone_iphone</i>
                     <p>結果の確認</p>
                 </a>
