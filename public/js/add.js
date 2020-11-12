@@ -37,7 +37,7 @@ $(function () {
     });
 
     // 結果ページのフェードイン、フェードアウト
-    $(".result_wrapper").hide().fadeIn(3300);
+    // $(".result_wrapper").hide().fadeIn(3300);
 
     $(document).ready(function () {
     let hsize = $(section).height();

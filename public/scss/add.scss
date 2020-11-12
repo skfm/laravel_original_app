@@ -39,6 +39,19 @@ img {
     display: none;
 }
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+
+  .result_wrapper {
+    animation: fadeIn 3.3s ease 0s 1 normal;
+  }
+
 /* フォーム画面*/
 .form-group input[type=file] {
     opacity: 1;
