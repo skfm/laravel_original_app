@@ -35,6 +35,10 @@
 - Docker(Laradock)
 - phpMyAdmin
 
+## ER図
+
+![Untitled-Diagram-drawio-diagrams-net](https://user-images.githubusercontent.com/44170627/99200118-c9691300-27e6-11eb-806f-fff30c9777f8.png)
+
 ## 使い方
 以下にJPTの使い方を説明します。
 
