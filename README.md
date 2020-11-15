@@ -1,3 +1,5 @@
+![JTP](https://user-images.githubusercontent.com/44170627/99199424-5c537e80-27e2-11eb-9db5-60667a846914.png)
+
 # JPT(Joke Paychology Test)
 「JPT」は相性診断テスト風ジョークアプリです。
 使用したい相手に URL を送り質問に答えてもらうと
@@ -32,4 +34,33 @@
 - heroku
 - Docker(Laradock)
 - phpMyAdmin
+
+## 使い方
+以下にJPTの使い方を説明します。
+
+### 表示させたいメッセージと画像の登録
+
+![JPT-詳細1](https://user-images.githubusercontent.com/44170627/99199407-3d54ec80-27e2-11eb-8a32-002223ee98ca.png)
+
+ユーザー管理ページのサイドメニューから、診断結果ページに登録したい
+テキストと画像を登録する（1、2）
+
+### 表示させたいメッセージと画像の登録
+
+![JPT-詳細1](https://user-images.githubusercontent.com/44170627/99199407-3d54ec80-27e2-11eb-8a32-002223ee98ca.png)
+
+ユーザー管理ページの真ん中にあるURLをコピーし、使用したい相手にURLを共有する（3）
+
+### 質問ページと結果ページの説明
+
+![理想のお相手診断テスト](https://user-images.githubusercontent.com/44170627/99199416-5067bc80-27e2-11eb-876a-7ced4de1cc74.png)
+
+共有したURLを開くと相性診断テストがはじまる
+全部で10問答えると診断結果ページが表示される
+
+![理想のお相手診断テスト｜結果](https://user-images.githubusercontent.com/44170627/99199419-58276100-27e2-11eb-8ec3-2712771fcd41.png)
+
+ユーザー管理ページで登録した画像と文章が表示される
+
+
 
