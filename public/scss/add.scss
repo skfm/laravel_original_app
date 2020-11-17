@@ -39,6 +39,17 @@ img {
     display: none;
 }
 
+.navbar .navbar-brand,
+.sidebar .logo .simple-text {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+h4.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -251,3 +262,9 @@ form.delete .form-group:nth-child(1) {
     }
 }
 
+#copyTarget {
+    width: 240px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}

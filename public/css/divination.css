@@ -39,6 +39,7 @@ body img {
 body .custom-control-label {
   font-size: 1.6rem;
   padding-left: 3px;
+  color: #555;
 }
 
 body .custom-control-label::before {
@@ -148,7 +149,7 @@ body .btn:hover {
 }
 
 body input[type="submit"] {
-  background-color: #ffcce5 !important;
+  background-color: #cc0000 !important;
 }
 
 body .result_item {
