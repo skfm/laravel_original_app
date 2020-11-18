@@ -85,6 +85,17 @@ body {
         color: $title-color;
     }
 
+    .title_wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+        .fa-heart {
+            font-size: 3.5rem;
+            padding: 0 5px;
+        }
+    }
+
     .desc_wrapper,
     .introduction_wrapper,
     .result_wrapper {

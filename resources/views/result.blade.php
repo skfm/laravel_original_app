@@ -6,7 +6,9 @@
 @section('content')
 <section class="section">
     <div class="title_wrapper">
+        <i class="far fa-heart"></i>
         <h1>理想のお相手診断テスト</h1>
+        <i class="far fa-heart"></i>
     </div>
     <div class="result_wrapper">
         <div class="result_item title">

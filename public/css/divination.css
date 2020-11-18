@@ -80,6 +80,23 @@ body .form_title {
   color: #cc0000;
 }
 
+body .title_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .title_wrapper .fa-heart {
+  font-size: 3.5rem;
+  padding: 0 5px;
+}
+
 body .desc_wrapper,
 body .introduction_wrapper,
 body .result_wrapper {
