@@ -8,7 +8,6 @@
     <div class="title_wrapper">
         <i class="far fa-heart"></i>
         <h1>理想のお相手診断テスト</h1>
-        <i class="far fa-heart"></i>
     </div>
     <div class="result_wrapper">
         <div class="result_item title">
@@ -17,7 +16,14 @@
             </p>
         </div>
         <div class="result_item">
-            <img src="{{ Storage::disk('s3')->url($user->image_path) }}" alt="ユーザーが登録した画像">
+            @if (!empty($user->image_path))
+                <img src="{{ Storage::disk('s3')->url($user->image_path) }}" alt="ユーザーが登録した画像">
+            @else
+                <p>
+                    画像の登録がされていません。<br>
+                    管理画面から診断結果で表示させたい画像を登録してください。
+                </p>
+            @endif
         </div>
         <div class="result_item">
             {{ $user->content }}

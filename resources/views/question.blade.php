@@ -8,7 +8,6 @@
     <div class="title_wrapper">
         <i class="far fa-heart"></i>
         <h1>理想のお相手診断テスト</h1>
-        <i class="far fa-heart"></i>
     </div>
     <div class="desc_wrapper">
         <p>
