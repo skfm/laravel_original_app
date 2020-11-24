@@ -44,14 +44,16 @@ $(function () {
 
     // 結果ページのフェードイン、フェードアウト
     // $(".result_wrapper").hide().fadeIn(3300);
+    let url = location.href ;
+    if (url.match('result')) {
+        $(document).ready(function () {
+            let hsize = $("section").height();
+            $("body.result").css("height", hsize + "px");
+        });
 
-    $(document).ready(function () {
-    let hsize = $(section).height();
-    $("body.result").css("height", hsize + "px");
-    });
-
-    $(window).resize(function () {
-    let hsize = $(section).height();
-    $("body.result").css("height", hsize + "px");
-    });
+        $(window).resize(function () {
+            let hsize = $("section").height();
+            $("body.result").css("height", hsize + "px");
+        });
+    }
 });
