@@ -8,8 +8,8 @@
 異性に驚きとちょっとしたユーモアを提供します。
 
 ## 本番環境　テストユーザー
-- ログインページ： [https://www.jpt-app.com/](URL "https://www.jpt-app.com/")
-- 質問ページ： [https://www.jpt-app.com/question?id=41](URL "https://www.jpt-app.com/question?id=41")
+- ログインページ： [https://www.jpt-app.com/](https://www.jpt-app.com/)
+- 質問ページ： [https://www.jpt-app.com/question?id=41](https://www.jpt-app.com/question?id=41)
 - メールアドレス：test100@test.com
 - パスワード：12345678
 
