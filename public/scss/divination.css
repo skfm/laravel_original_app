@@ -1,0 +1,188 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: "Noto Sans JP";
+  padding-bottom: 55px;
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+body h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  body h1 {
+    font-size: 2.2rem;
+  }
+}
+
+body h2 {
+  font-size: 2.5rem;
+}
+
+body p {
+  margin: 0;
+}
+
+body img {
+  width: 100%;
+  max-width: 100%;
+}
+
+body .custom-control-label {
+  font-size: 1.6rem;
+  padding-left: 3px;
+  color: #555;
+}
+
+body .custom-control-label::before {
+  position: absolute;
+  top: 0.35rem;
+  left: -1.6rem;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+}
+
+body .custom-control-label::after {
+  position: absolute;
+  top: 0.35rem;
+  left: -1.6rem;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+body .section {
+  padding: 45px 15px 0;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+body .title_wrapper,
+body .form_title {
+  text-align: center;
+  font-family: "Nico Moji";
+  color: #cc0000;
+}
+
+body .title_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .title_wrapper .fa-heart {
+  font-size: 4rem;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  body .title_wrapper .fa-heart {
+    font-size: 2.2rem;
+  }
+}
+
+body .desc_wrapper,
+body .introduction_wrapper,
+body .result_wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin-top: 20px;
+}
+
+body .desc_wrapper,
+body .form_question {
+  color: #cc0033;
+}
+
+body .form_wrapper {
+  padding: 40px 15px 30px;
+  margin: 40px 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+body .form_item {
+  min-height: 340px;
+}
+
+body .form_question {
+  padding-top: 15px;
+}
+
+body .form-group {
+  padding-top: 20px;
+}
+
+body .custom-radio {
+  padding-top: 5px;
+}
+
+body .form_btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+body .btn {
+  width: 100px;
+  border-radius: 5px;
+  background-color: #ddd;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
+body .btn.prev {
+  margin-right: 15px;
+}
+
+body .btn.next {
+  margin-left: 15px;
+}
+
+body .btn:hover {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+body input[type="submit"] {
+  background-color: #cc0000 !important;
+}
+
+body .result_item {
+  margin-top: 15px;
+}
+
+body .result_item.title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+/*# sourceMappingURL=divination.css.map */
